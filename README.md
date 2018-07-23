@@ -77,6 +77,8 @@ To run this test:
 
     phpunit tests/E2eTest.php
 
+`static::createPantherClient()` takes the host address and port number as two optional args. If your tests appear to hang, change the port number from 9000 to another. e.g. `static::createPantherClient('127.0.0.1', 9001);`
+
 ### A Polymorph Feline
 
 If you are testing a Symfony application, `PantherTestCase` automatically extends the `WebTestCase` class. It means
